@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GamerZone - Gaming Channel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+    header {
+      background-color: #181818;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    header h1 {
+      color: #ff3333;
+      margin: 0;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ff3333;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      color: #bbb;
+      max-width: 600px;
+      margin: 0 auto 1.5rem auto;
+    }
+    .btn {
+      background: #ff3333;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #cc0000;
+    }
+    .videos {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .videos h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .video-card {
+      background: #181818;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .video-card h4 {
+      margin-top: 0.75rem;
+      font-size: 1.2rem;
+    }
+    .social {
+      text-align: center;
+      padding: 2rem;
+    }
+    .social a {
+      margin: 0 10px;
+      color: #bbb;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    .social a:hover {
+      color: #ff3333;
+    }
+    footer {
+      background: #181818;
+      color: #888;
+      text-align: center;
+      padding: 1rem;
+    }
+    iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🎮 GamerZone</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Videos</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Welcome to GamerZone</h2>
+    <p>The ultimate destination for epic gaming content, live streams, and exclusive highlights.</p>
+    <button class="btn">Subscribe Now</button>
+  </section>
+
+  <!-- Featured Videos -->
+  <section class="videos">
+    <h3>🎥 Featured Videos</h3>
+    <div class="video-grid">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <h4>Epic Gameplay Montage</h4>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+        <h4>Funny Moments Compilation</h4>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ" allowfullscreen></iframe>
+        <h4>Live Stream Highlights</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Links -->
+  <section class="social">
+    <h3>Follow Me</h3>
+    <a href="https://youtube.com" target="_blank">YouTube</a>
+    <a href="https://twitch.tv" target="_blank">Twitch</a>
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> GamerZone. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
